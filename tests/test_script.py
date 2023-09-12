@@ -1,3 +1,4 @@
+from appium_driver import appium_driver_fixture
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.actions import interaction
@@ -42,4 +43,5 @@ def test_app_functionality(appium_driver_fixture):
     time.sleep(1)
     el10 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Navigate up")
     el10.click()
-    driver.quit()
+
+    # end of test script
